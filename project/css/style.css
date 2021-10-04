@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container-main{
+    /*background: #ffdddd;*/
+    width: 98%;
+    margin: auto;
+    height: 100%;
+  /*  display: flex;*/
+ /*   column-span: 1;*/
+
+}
+.main{
+    display: block;
+    /*background: #a61717;*/
+    width: 100%;
+  /*  float: right;*/
+    margin-top: 95px;
+    margin-bottom: 20px;
+}
+.nav-item:hover{
+    background-color: lightslategray;
+    border-radius: 10px 20px;
+    color: #c10d0d;
+}
+.nav-item{
+    padding: 15px;
+    text-align: center;
+}
+.frm .stockTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.frm .stockTable thead .stockheader{
+    background: #3f3f3f;
+    font-family: Pyidaungsu, Zawgyi-One, Arial;
+    font-size: 30px;
+    height: 60px;
+    color: white;
+    letter-spacing: 0.3em;
+    word-spacing: 0.5em;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    text-align: center;
+}
+/*.frm .stockTable thead .secheader{
+    border:1px solid blue;
+}*/
+.frm .stockTable thead .secheader th{
+    background: #51585e;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.frm .stockTable tbody .meat td{
+    border-bottom: 1px solid blue;
+    text-align: right;
+    padding-right: 10px;
+}
+.frm .stockTable tbody tr .hdmeat{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: red;
+}
+.frm .stockTable tbody .meat .alleft{
+    text-align: left;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.frm .stockTable tbody .meat:nth-child(even){
+    background: lawngreen;
+
+}
+.frm .stockTable tbody .meat:hover{
+    background: #51585e;
+    color: white;
+}
+
+.frm .stockTable tbody .subtotal{
+    border: 3px double red;
+    border-right: none;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.frm .stockTable tbody .sub-total-amt{
+    border: 3px double red;
+    border-left: none;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar{
+    display: block;
+   /* background: #0dcaf0;*/
+    width: 10%;
+    float: left;
+    height: 100%;
+    margin-top: 115px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.sidebar .sidemenu .btn-group .button{
+    background: #3f3f3f;
+    display: block;
+    width:100% ;
+    padding: 10px;
+    height: 70px;
+    color: white;
+    border-radius: 5px 15px;
+    font-size: 15px;
+}
+.sidebar .sidemenu .btn-group .button:hover{
+    color: lawngreen;
+    font-size: 17px;
+}
+
+.footer-container{
+    display:grid;
+    /*grid-template-columns:repeat(auto-fill,minmax(460px,1fr));*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem 1rem;
+    flex-direction: column;
+    margin: 20px 0;
+    background-color: #51585e;
+    width: 100%;
+    height: auto;
+    column-gap: 0.25rem;
+
+}
+@media only screen and (max-width: 600px) {
+    .footer-container  {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
+.footer-container .gplocation iframe{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+
+}
+.footer-container h3{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+}
+.footer-container p{
+    line-height: 15px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container .gplocation{
+    width: 100%;
+    margin-left: 15px;
+}
+.footer-container .gplocation .mylocation{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.footer-container  .service {
+   text-decoration: none;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+}
+.footer-container > .service > .service-item ,.study-kid>.service-item,.video-study>.service-item{
+    text-decoration: none;
+    margin-top: 15px;
+    line-height: 10px;
+    display: block;
+    color: white;
+    padding: 0 30px;
+    text-align: center;
+}
+.footer-container .service-item:hover{
+    cursor: pointer;
+    color: lawngreen;
+}
+
+
+/* Blinking Flash  */
+
+@-webkit-keyframes stockheader {
+    from { color: red;
+        font-size: 10px;
+    }
+    to { color: white;
+        font-size: 30px;
+    }
+}
+@-moz-keyframes stockheader {
+    from { color: red;
+        font-size: 10px;
+    }
+    to { color: white;
+        font-size: 30px;
+    }
+}
+@-o-keyframes stockheader {
+    from { color: red;
+        font-size: 10px;
+    }
+    to { color: white;
+        font-size: 30px;
+    }
+}
+@keyframes stockheader {
+    from { color: lawngreen;
+        /*font-size: 10px;*/
+    }
+    to { color: red;
+       /* font-size: 35px;*/
+
+    }
+
+
+}
+.stockheader {
+    -webkit-animation: stockheader 500ms infinite; /* Safari 4+ */
+    -moz-animation:    stockheader 500ms infinite; /* Fx 5+ */
+    -o-animation:      stockheader 500ms infinite; /* Opera 12+ */
+    animation:         stockheader 500ms infinite; /* IE 10+ */
+}

@@ -1,0 +1,40 @@
+/*footer{*/
+/*    background: #5c636a;*/
+/*    grid-area: footer;*/
+/*    border-radius: var(--main-radius);*/
+/*    padding-top: var(--main-padding);*/
+/*}*/
+/*#footer-container{*/
+/*    display: inline-block;*/
+/*    width: 100%;*/
+/*}*/
+/*#first{*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    float: left;*/
+/*    background: #aaffaa;*/
+/*    grid-area: first;*/
+/*    width: 30%;*/
+/*    height: 150px;*/
+/*    margin:15px 20px;*/
+/*    border-top-right-radius: 150px;*/
+/*}*/
+/*#second{*/
+/*    display: inline-block;*/
+/*    background: #0a58ca;*/
+/*    grid-area: second;*/
+/*    margin:15px 0;*/
+/*    width: 30%;*/
+/*    height: 150px;*/
+/*    border-radius: 10px;*/
+/*}*/
+/*#third{*/
+/*    display: inline-block;*/
+/*    float: right;*/
+/*    width: 30%;*/
+/*    height: 150px;*/
+/*    background: #3dd5f3;*/
+/*    grid-area: third;*/
+/*    margin:15px 20px;*/
+/*    border-top-left-radius: 150px;*/
+/*}*/
